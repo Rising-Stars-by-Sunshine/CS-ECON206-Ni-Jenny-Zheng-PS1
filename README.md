@@ -1,4 +1,4 @@
-# Project information
+## Project information
 
 Author: Ni(Jenny) Zheng, Computational Design, Social Policy track, Class 2026, Duke Kunshan University
 
