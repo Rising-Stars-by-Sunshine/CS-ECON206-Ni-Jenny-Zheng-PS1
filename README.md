@@ -1,4 +1,4 @@
-# Jenny
+#Jenny's project1
 Project information
 Author: Ni(Jenny) Zheng, Computational Design, Social Policy track, Class 2026, Duke Kunshan University
 Instructor: Prof. Luyao Zhang, Duke Kunshan University
