@@ -31,27 +31,34 @@ There are two players: the "investor" (A) and the "trustee"(B). The game starts 
 A is given an endowment and decides how much of that money to invest B. However the investment from A is, it will be tripled.
 (eg. If A got $5, A can choose any amount between 0 and 15 to invest B. If A chooses to invest $5, B receives $15.)
 B then decides how much of that money to return to the investor. B can choose to return any amount between $0 and $15.
+
 The game is repeated for several rounds, with the roles of investor and trustee switching between the two players. Both of them can negotiate with each other, but any of their promise in the negotiation may not actually work.
+
 This game is largely depend on the trust in each other and whether A and B choose to collaborate or not. The investor must decide how much to trust the trustee, and the trustee must decide how much to repay the investor's trust, where we should always take facts of social behavior into consideration in the real world.
 
 - Solution Concept
 
 The concept of solution for this trust game involves exploring the strategies and outcomes that may arise between the investor and the trustee.
 One possible solution is that A chooses to invest a high amount in the trustee, indicating a high level of trust in them to return the investment with interest. One of the motivations of A may be desire for maximized profit because if all of A's money is tripled, A has higher probabilities to get more money than A's original sum of money as long as long A and B reach an agreement that they will share the total benefit (not necessarily equally).
-In response, the trustee may feel a sense of obligation to return a higher amount to the investor to maintain the trust and avoid any potential negative consequences of breaking the trust. Also, since B doesn't have money in the very beginning, no matter how A invest to B and whether B return to A, B will not lose any actual benefit. If B wants to maximize the total benefit, B may raise the win-win cooperation, which means share the average of total income of both. This, in turn, may increase the level of trust between the two players and lead to a more cooperative and profitable relationship in future rounds.
-Another possible solution is that A chooses to invest a low amount in B, indicating a low level of trust or a avoiding high risks of potential losses. In response, the trustee may feel less obligation to return a high amount to the investor, potentially leading to a breakdown in trust and cooperation in future rounds. Additionally, the potential for broken promises and negotiation may create uncertainty and unpredictability in the outcomes of the game.
+In response, the trustee may return a higher amount to the investor to maintain the trust and avoid any potential negative consequences of breaking the trust. Also, since B doesn't have money in the very beginning, no matter how A invest to B and whether B return to A, B will not lose any actual benefit. If B wants to maximize the total benefit, B may raise the win-win cooperation, which means share the average of total income of both. This, in turn, may increase the level of trust between the two players and lead to a more cooperative and profitable relationship in future rounds.
+Another possible solution is that A chooses to invest a low amount in B, indicating a low level of trust or a avoiding high risks of potential losses. In response, the trustee may be lees likely tod return a high amount to the investor, potentially leading to a breakdown in trust and cooperation in future rounds. Additionally, the potential for broken promises and negotiation may create uncertainty and unpredictability in the outcomes of the game.
 
 - Strategies
 
-1. win-win cooperation: share the total benefit equally. After several rounds, both A and B will get the same sum of money, which is the way that is rather equal and most beneficial to both of players. Under this circumstance, the sum of investment isn't important because whatever they invest or pay back is based on the win-win cooperation that all of their money should be split equally. The most important foundation of their goal of win-win is their long-term trust and willingness to continue the cooperation.
+1. win-win cooperation: Under this circumstance, the sum of investment isn't important because whatever they invest or pay back is based on the win-win cooperation that all of their money should be split equally. The most important foundation of their goal of win-win is their long-term trust and willingness to continue the cooperation.
 
-2. gamble: all in the money and face the risk of high risk of entire loss or huge sum of benefit. Both A and B can be the gambler, and they can conduct in any round. If A has sufficient trust in B, or have enough confidence that A oneself will get the largest interest from the return of A's investment, or pursue the efficiency of their trading-off and wants to get large amount of money as soon as possible, A will be the gambler and his fortune will totally depend on the other player. For B who receive the all-in money from A, B has the chance to betray A, or follow A's hope with some other costs.
+- Payoffs: A and B share the total benefit equally. After several rounds, both A and B will get the same sum of money, which is the way that is rather equal and most beneficial to both of players.
 
-3. risk minimization: very small amount of investment each time, and it may iteratively increase as the strengthen of the trust in each other. Both A and B will highlight the risk they run so that they may invest less than 50% of their total sum of money based on their evaluation on others if the opposite doesn't pay back. In the situation, both players don't have much trust in each other, and they only care the potential of their loss.
+2. gamble: all in the money and face the risk of high risk of entire loss or huge sum of benefit. Both A and B can be the gambler, and they can conduct in any round.
+
+- Payoffs: If A has sufficient trust in B, or have enough confidence that A oneself will get the largest interest from the return of A's investment, or pursue the efficiency of their trading-off and wants to get large amount of money as soon as possible, A will be the gambler and his fortune will totally depend on the other player. For B who receive the all-in money from A, B has the chance to betray A, or follow A's hope with some other costs.
+
+3. risk minimization: very small amount of investment each time, and it may iteratively increase as the strengthen of the trust in each other.
+- Payoffs: Both A and B will highlight the risk they run so that they may invest less than 50% of their total sum of money based on their evaluation on others if the opposite doesn't pay back. In the situation, both players don't have much trust in each other, and they only care the potential of their loss.
 
 - Evaluations
-- Fairness:
 
+- Fairness:
 The game is always unfair for both A and B.
 1)Risk: The tripled investment from A may involve a significant amount of risk for B, as they are not guaranteed to receive any return on the investment. This may lead to a situation where the trustee feels hesitant to invest the money they receive, as they do not want to risk losing it.
 
@@ -77,7 +84,7 @@ In the real world, we should consider social behaviors of both players, which me
 -gain some money with little risk of investment?
 -huge gap beyond others in wealth?
 
-### Code
+##  Code
     from otree.api import *
 
 
@@ -114,7 +121,7 @@ In the real world, we should consider social behaviors of both players, which me
         pass
 
 
-# FUNCTIONS
+# Functions
     def sent_back_amount_choices(group: Group):
         return currency_range(0, group.sent_amount * C.MULTIPLIER, 1)
 
@@ -126,7 +133,7 @@ In the real world, we should consider social behaviors of both players, which me
         p2.payoff = group.sent_amount * C.MULTIPLIER - group.sent_back_amount
 
 
-# PAGES
+# Pages
     class Send(Page):
     form_model = 'group'
     form_fields = ['sent_amount']
@@ -178,6 +185,8 @@ In the real world, we should consider social behaviors of both players, which me
 - headshot
 ![_DSC1207](https://user-images.githubusercontent.com/125801773/230779922-be3c5551-9678-4dc3-a896-22ebfddfa6a7.JPG)
 
+- Self-introduction
+  Hi, I am Ni(Jenny) Zheng from Shanghai. My intended major is Computational Design with track in Social Policy. In the future, I'd like to dig deeper into computational social science (economics/environmental science) and do some quantitative research.
 ### References
 
 - Literature References in [Chicago Author-Date](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html) Style and [BibTex](https://scholar.google.com/) 
