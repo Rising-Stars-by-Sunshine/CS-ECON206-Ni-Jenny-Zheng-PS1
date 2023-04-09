@@ -50,6 +50,7 @@ Another possible solution is that A chooses to invest a low amount in B, indicat
 3. risk minimization: very small amount of investment each time, and it may iteratively increase as the strengthen of the trust in each other. Both A and B will highlight the risk they run so that they may invest less than 50% of their total sum of money based on their evaluation on others if the opposite doesn't pay back. In the situation, both players don't have much trust in each other, and they only care the potential of their loss.
 
 - Evaluations
+- Fairness:
 
 The game is always unfair for both A and B.
 1)Risk: The tripled investment from A may involve a significant amount of risk for B, as they are not guaranteed to receive any return on the investment. This may lead to a situation where the trustee feels hesitant to invest the money they receive, as they do not want to risk losing it.
@@ -75,11 +76,94 @@ In the real world, we should consider social behaviors of both players, which me
 -maximized profit?
 -gain some money with little risk of investment?
 -huge gap beyond others in wealth?
+
 ### Code
-- Game Environment
-- Strategic plays
-- Equilibruim Evaluations: e.g. belief, strategy, and payoffs
-- oTree Experimental Code 
+from otree.api import *
+
+
+doc = """
+Simple trust game
+"""
+
+
+class C(BaseConstants):
+    NAME_IN_URL = 'trust_simple'
+    PLAYERS_PER_GROUP = 2
+    NUM_ROUNDS = 1
+    ENDOWMENT = cu(10)
+    MULTIPLIER = 3
+
+
+class Subsession(BaseSubsession):
+    pass
+
+
+class Group(BaseGroup):
+    sent_amount = models.CurrencyField(
+        min=cu(0),
+        max=C.ENDOWMENT,
+        doc="""Amount sent by P1""",
+        label="How much do you want to send to participant B?",
+    )
+    sent_back_amount = models.CurrencyField(
+        doc="""Amount sent back by P2""", label="How much do you want to send back?"
+    )
+
+
+class Player(BasePlayer):
+    pass
+
+
+# FUNCTIONS
+def sent_back_amount_choices(group: Group):
+    return currency_range(0, group.sent_amount * C.MULTIPLIER, 1)
+
+
+def set_payoffs(group: Group):
+    p1 = group.get_player_by_id(1)
+    p2 = group.get_player_by_id(2)
+    p1.payoff = C.ENDOWMENT - group.sent_amount + group.sent_back_amount
+    p2.payoff = group.sent_amount * C.MULTIPLIER - group.sent_back_amount
+
+
+# PAGES
+    class Send(Page):
+    form_model = 'group'
+    form_fields = ['sent_amount']
+
+    @staticmethod
+    def is_displayed(player: Player):
+        return player.id_in_group == 1
+
+
+        class WaitForP1(WaitPage):
+        pass
+
+
+    class SendBack(Page):
+    form_model = 'group'
+    form_fields = ['sent_back_amount']
+
+    @staticmethod
+    def is_displayed(player: Player):
+        return player.id_in_group == 2
+
+    @staticmethod
+    def vars_for_template(player: Player):
+        group = player.group
+
+        return dict(tripled_amount=group.sent_amount * C.MULTIPLIER)
+
+
+        class ResultsWaitPage(WaitPage):
+        after_all_players_arrive = set_payoffs
+
+
+        class Results(Page):
+        pass
+
+
+     page_sequence = [Send, WaitForP1, SendBack, ResultsWaitPage, Results]
 
 
 ### Spotlight
@@ -92,11 +176,7 @@ In the real world, we should consider social behaviors of both players, which me
 
 ### More about the Author
 - headshot
-- self-introduction
-- Final reflections 
-  - intellectual growth
-  - professional growth
-  - living a purposeful life
+![_DSC1207](https://user-images.githubusercontent.com/125801773/230779922-be3c5551-9678-4dc3-a896-22ebfddfa6a7.JPG)
 
 ### References
 
