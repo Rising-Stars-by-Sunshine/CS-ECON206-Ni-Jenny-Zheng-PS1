@@ -66,23 +66,6 @@ The game is always unfair for both A and B.
 
 3)Negotiation: The fact that promises made during negotiation may not be kept adds another uncertainty to the game. If either player feels that they have been misled or taken advantage of during negotiation, this may lead to a breakdown in trust and cooperation.
 
--More research questions in the real world?
-
-In the real world, we should consider social behaviors of both players, which means that they will be affected by many other factors when continuing/stopping their game.
-
-1) Is there an agency between two players? If one person wants to get higher amount of money than the initial endowment but there is no best player B to help him, agency very likely works to match the best couple of players with similar needs or strategies.
-
-2) Does extra cost exist in the game? How they negotiate with each other?
-
-3) When does the game end?
--when there is the huge gap?
--when one person thinks he has got enough money and wants to exit the game?
--when their profit maximized?
-
-4) What are people's expectation of this game?
--maximized profit?
--gain some money with little risk of investment?
--huge gap beyond others in wealth?
 
 ##  Code
     from otree.api import *
@@ -174,12 +157,31 @@ In the real world, we should consider social behaviors of both players, which me
 
 
 ### Spotlight
-- Posters
-- Figures
-- Slides
-- Presentations
 - Review articles
-- Media appearance
+1."Behavioral economics: Reunifying psychology and economics" is a book that at the intersection of psychology and economics.
+The book introduces basic concepts of behavioral economics, showing that individuals are often irrational and make decisions based on emotions and biases, various biases and heuristics that influence decision-making in individuals, and using the approach of behavioral economics to policy-making.
+  -Challenge to trust game
+According to traditional game theory, the rational choice for both players is to maximize their own payoffs, which would lead the trustor to send no money and the trustee to keep all the money received. However, in fact, trustors often return some or all of the tripled amount. Variables are hard to predicted precisely. It challenges the assumptions of rational choice theory and suggest that humans are not purely self-interested, but also care about fairness, reciprocity, and social norms. The authors suggest that incorporating these factors into economic models can lead to a more accurate understanding of human behavior and more effective policy solutions.
+
+2."Incorporating Fairness into Game Theory and Economics" provides a theoretical framework for incorporating fairness into game theory, and empirical evidence to support the theory. Rabin introduces the concept of "other-regarding preferences", which refers to the idea that individuals care not only about their own payoffs but also about the payoffs of others. He argues that these preferences are an important factor in many economic interactions, and that they can be incorporated into game theory models by using the concept of social utility functions. Besides,Rabin also introduces the concept of "equity-efficiency tradeoffs", which refers to the idea that fairness concerns can sometimes lead to outcomes that are less efficient from an economic perspective. He argues that these tradeoffs are an important consideration in policy-making, and that a better understanding of fairness can lead to more effective policy solutions.
+
+-More research questions in the real world?
+
+In the real world, we should consider social behaviors of both players, which means that they will be affected by many other factors when continuing/stopping their game.
+
+1) Is there an agency between two players? If one person wants to get higher amount of money than the initial endowment but there is no best player B to help him, agency very likely works to match the best couple of players with similar needs or strategies.
+
+2) Does extra cost exist in the game? How they negotiate with each other?
+
+3) When does the game end?
+-when there is the huge gap?
+-when one person thinks he has got enough money and wants to exit the game?
+-when their profit maximized?
+
+4) What are people's expectation of this game?
+-maximized profit?
+-gain some money with little risk of investment?
+-huge gap beyond others in wealth?
 
 ### More about the Author
 - headshot
@@ -191,9 +193,35 @@ In the real world, we should consider social behaviors of both players, which me
 
 - Literature References in [Chicago Author-Date](https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html) Style and [BibTex](https://scholar.google.com/) 
 
+Camerer, Colin. 1999. ‘Behavioral Economics: Reunifying Psychology and Economics’. Proceedings of the National Academy of Sciences 96 (19): 10575–77. https://doi.org/10.1073/pnas.96.19.10575.
+
+Rabin, Matthew. 1993. ‘Incorporating Fairness into Game Theory and Economics’. The American Economic Review 83 (5): 1281–1302.
+
 Levin, Dan, and Luyao Zhang. 2020. “Bridging Level-K to Nash Equilibrium.” *The Review of Economics and Statistics* 104 (6): 1329–40. https://doi.org/10.1162/rest_a_00990.
 
 ```
+@article{camerer1999behavioral,
+  title={Behavioral economics: Reunifying psychology and economics},
+  author={Camerer, Colin F},
+  journal={Proceedings of the National Academy of Sciences},
+  volume={96},
+  number={19},
+  pages={10575--10577},
+  year={1999},
+  publisher={National Academy of Sciences}
+ 
+}
+
+@article{rabin1993incorporating,
+  title={Incorporating fairness into game theory and economics},
+  author={Rabin, Matthew},
+  journal={The American Economic Review},
+  volume={83},
+  number={5},
+  pages={1281--1302},
+  year={1993},
+}
+
 @article{levin2022bridging,
   title={Bridging level-k to nash equilibrium},
   author={Levin, Dan and Zhang, Luyao},
