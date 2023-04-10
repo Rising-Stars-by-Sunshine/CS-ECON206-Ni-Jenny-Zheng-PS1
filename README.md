@@ -158,6 +158,7 @@ The game is always unfair for both A and B.
 
 ### Spotlight
 - Review articles
+
 1."Behavioral economics: Reunifying psychology and economics" is a book that at the intersection of psychology and economics.
 The book introduces basic concepts of behavioral economics, showing that individuals are often irrational and make decisions based on emotions and biases, various biases and heuristics that influence decision-making in individuals, and using the approach of behavioral economics to policy-making.
   -Challenge to trust game
@@ -188,6 +189,7 @@ In the real world, we should consider social behaviors of both players, which me
 ![_DSC1207](https://user-images.githubusercontent.com/125801773/230779922-be3c5551-9678-4dc3-a896-22ebfddfa6a7.JPG)
 
 - Self-introduction
+
   Hi, I am Ni(Jenny) Zheng from Shanghai. My intended major is Computational Design with track in Social Policy. In the future, I'd like to dig deeper into computational social science (economics/environmental science) and do some quantitative research.
 ### References
 
