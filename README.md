@@ -25,7 +25,7 @@ Note: please insert the screenshot of the answers to your research question by C
 - references
 
 ### Model
-- Game Environment
+- [Game Environment]
 
 There are two players: the "investor" (A) and the "trustee"(B). The game starts with A.
 A is given an endowment and decides how much of that money to invest B. However the investment from A is, it will be tripled.
@@ -34,30 +34,58 @@ B then decides how much of that money to return to the investor. B can choose to
 
 The game is repeated for several rounds, with the roles of investor and trustee switching between the two players. Both of them can negotiate with each other, but any of their promise in the negotiation may not actually work.
 
-This game is largely depend on the trust in each other and whether A and B choose to collaborate or not. The investor must decide how much to trust the trustee, and the trustee must decide how much to repay the investor's trust, where we should always take facts of social behavior into consideration in the real world.
+This game is largely depend on the trust in each other and whether A and B choose to collaborate or not. The investor must decide how much to trust the trustee, and the trustee must decide how much to repay the investor's trust, where we should always take facts of social behavior into consideration in the real world (Cesarini et al. 2008).
 
-- Solution Concept
+- [Solution Concept]
 
-The concept of solution for this trust game involves exploring the strategies and outcomes that may arise between the investor and the trustee.
-One possible solution is that A chooses to invest a high amount in the trustee, indicating a high level of trust in them to return the investment with interest. One of the motivations of A may be desire for maximized profit because if all of A's money is tripled, A has higher probabilities to get more money than A's original sum of money as long as long A and B reach an agreement that they will share the total benefit (not necessarily equally).
-In response, the trustee may return a higher amount to the investor to maintain the trust and avoid any potential negative consequences of breaking the trust. Also, since B doesn't have money in the very beginning, no matter how A invest to B and whether B return to A, B will not lose any actual benefit. If B wants to maximize the total benefit, B may raise the win-win cooperation, which means share the average of total income of both. This, in turn, may increase the level of trust between the two players and lead to a more cooperative and profitable relationship in future rounds.
-Another possible solution is that A chooses to invest a low amount in B, indicating a low level of trust or a avoiding high risks of potential losses. In response, the trustee may be lees likely tod return a high amount to the investor, potentially leading to a breakdown in trust and cooperation in future rounds. Additionally, the potential for broken promises and negotiation may create uncertainty and unpredictability in the outcomes of the game.
+The concept of a solution for this trust game involves exploring the strategies and outcomes that may arise between the investor (Player A) and the trustee (Player B) while aiming for Pareto efficiency. Pareto efficiency is a widely used efficiency concept in game theory that focuses on maximizing the total benefit without making any player worse off (Stiglitz 1982).
 
-- Strategies
+One possible solution is a win-win cooperation strategy, where both A and B agree to share the total benefit equally. This strategy fosters cooperation, trust, and fairness. By splitting the total benefit equally, both players achieve an outcome that is Pareto efficient, as no player can be made better off without making the other player worse off.
 
-1. win-win cooperation: Under this circumstance, the sum of investment isn't important because whatever they invest or pay back is based on the win-win cooperation that all of their money should be split equally. The most important foundation of their goal of win-win is their long-term trust and willingness to continue the cooperation.
+Another possible solution is a gamble strategy, where one player (either A or B) decides to go all-in with their money, taking a high-risk, high-reward approach. This strategy can lead to Pareto efficient outcomes if both players agree to share the resulting benefit equally. However, it is important to note that the gamble strategy may introduce risks and potential losses, which can undermine the fairness and stability of the game.
 
-- Payoffs: A and B share the total benefit equally. After several rounds, both A and B will get the same sum of money, which is the way that is rather equal and most beneficial to both of players.
+In situations where trust is low, a risk minimization strategy may be adopted. Both A and B aim to minimize their risk by investing smaller amounts. While this strategy may not maximize the total benefit, it allows both players to limit their potential losses and maintain a sense of fairness. The risk minimization strategy can lead to Pareto efficient outcomes when both players have a similar level of risk aversion (Chin 2009).
 
-2. gamble: all in the money and face the risk of high risk of entire loss or huge sum of benefit. Both A and B can be the gambler, and they can conduct in any round.
+It is crucial to emphasize that achieving Pareto efficiency does not guarantee fairness in terms of wealth distribution. The trust game inherently involves asymmetry, as one player takes on the role of an investor while the other acts as a trustee. However, by focusing on Pareto efficiency, the solution concept ensures that both players maximize their overall benefits without worsening each other's outcomes (Rasti, Sharafat, and Seyfe 2009).
 
-- Payoffs: If A has sufficient trust in B, or have enough confidence that A oneself will get the largest interest from the return of A's investment, or pursue the efficiency of their trading-off and wants to get large amount of money as soon as possible, A will be the gambler and his fortune will totally depend on the other player. For B who receive the all-in money from A, B has the chance to betray A, or follow A's hope with some other costs.
+Overall, the solution concept of the trust game incorporates strategies that aim to achieve Pareto efficiency while considering trust, risk, and fairness. By analyzing the game from this perspective, players can make informed decisions that optimize their individual benefits while maintaining a cooperative and mutually beneficial relationship.
 
-3. risk minimization: very small amount of investment each time, and it may iteratively increase as the strengthen of the trust in each other.
-- Payoffs: Both A and B will highlight the risk they run so that they may invest less than 50% of their total sum of money based on their evaluation on others if the opposite doesn't pay back. In the situation, both players don't have much trust in each other, and they only care the potential of their loss.
+- [Strategies]
+
+- Player A's Strategies:
+  **High Trust Strategy:** A chooses to invest a high amount in B, indicating a high level of trust. A believes that B will return the investment with interest.
+  *Action:* A selects a high amount to invest in B.
+  *Contingency:* A expects B to reciprocate by returning a higher amount.
+
+  **Low Trust Strategy:** A chooses to invest a low amount in B, indicating a low level of trust or a desire to avoid high risks.
+  *Action:* A selects a low amount to invest in B.
+  *Contingency:* A expects B to reciprocate by returning a lower amount.
+  
+- Player B's Strategies:
+  **High Return Strategy:** B chooses to return a higher amount to A, aiming to maintain trust and foster a cooperative relationship.
+  *Action:* B selects a higher amount to return to A.
+  *Contingency:* B expects A to continue investing a high amount in future rounds.
+
+  **Low Return Strategy:** B chooses to return a lower amount to A, potentially leading to a breakdown in trust and cooperation.
+  *Action:* B selects a lower amount to return to A.
+  *Contingency:* B expects A to invest a lower amount in future rounds or to adopt a more risk-averse strategy.
+  
+- Both Players' Strategies:
+  **Win-Win Cooperation Strategy:** Both A and B agree to share the total benefit equally, fostering cooperation and mutual trust.
+  *Action:* Both players agree to split the total benefit equally.
+  *Contingency:* Both players receive the same sum of money, leading to a fair and cooperative outcome.
+  
+  **Gamble Strategy:** Either A or B decides to go all-in with their money, taking a high-risk, high-reward approach.
+  *Action:* One player (either A or B) invests their entire amount, while the other player receives the investment.
+  *Contingency:* The outcome depends on the actions of the player who receives the investment, which can result in either a significant loss or a substantial gain for both players.
+  
+  **Risk Minimization Strategy:** Both A and B aim to minimize their risk by investing smaller amounts, particularly when trust is low.
+  *Action:* Both players invest a small fraction of their total amount.
+  *Contingency:* Both players limit their potential losses in case the other player does not reciprocate.
+
+The players can choose different strategies based on their individual preferences, risk tolerance, and beliefs about the other player's behavior.
 
 - Evaluations
-
 - Fairness:
 The game is always unfair for both A and B.
 1)Risk: The tripled investment from A may involve a significant amount of risk for B, as they are not guaranteed to receive any return on the investment. This may lead to a situation where the trustee feels hesitant to invest the money they receive, as they do not want to risk losing it.
@@ -68,6 +96,8 @@ The game is always unfair for both A and B.
 
 
 ##  Code
+Game Tree:
+
     from otree.api import *
 
 
@@ -155,6 +185,13 @@ The game is always unfair for both A and B.
 
      page_sequence = [Send, WaitForP1, SendBack, ResultsWaitPage, Results]
 
+  **Description**
+  The code is an implementation of a simple trust game using the oTree framework. The trust game involves two players: player 1 and player 2, showing how these players make decisions and their payoffs are calculated based on their choices.
+
+- `Group` represents a group of players. It contains fields to store the amount sent by player 1 (`sent_amount`) and the amount sent back by player 2 (`sent_back_amount`).
+- `sent_back_amount_choices` determines the choices for the amount sent back by player 2 based on the amount sent from player 1.
+- `set_payoffs` calculates the payoffs for each player in the group based on the amount sent and sent back.
+- `ResultsWaitPage`, and `Results` are used to calculate and display the payoffs after all players have made their decisions.
 
 ### Spotlight
 - Review articles
